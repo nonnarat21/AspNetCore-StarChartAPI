@@ -20,5 +20,10 @@ namespace StarChart.Models
         public List<CelestialObject> Satellites { get; set; }
 
         public TimeSpan OrbitalPeriod { get; set; }
+
+        public static implicit operator List<object>(CelestialObject v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
